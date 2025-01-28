@@ -9,6 +9,7 @@ from sklearn.linear_model import LogisticRegression
 from sklearn.svm import SVC
 from sklearn.metrics import classification_report, confusion_matrix
 from PIL import Image
+import os
 
 # Load and set up the page
 image = Image.open('./img/funding.png')
@@ -99,3 +100,5 @@ if st.button('Predict'):
     st.write(f'The predicted repayment status is: {result}')
     st.write(f"Confusion Matrix:\n{confusion_matrix(y_test, model.predict(X_test))}")
     st.write(f"Classification Report:\n{classification_report(y_test, model.predict(X_test))}")
+
+    
