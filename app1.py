@@ -1,5 +1,4 @@
 import streamlit as st
-import sklearn
 import pandas as pd
 import numpy as np
 from sklearn.preprocessing import StandardScaler, OrdinalEncoder, LabelEncoder
